@@ -5,8 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    //<link rel="stylesheet" href="./restcountries.js" type="text/Javascript">
 </head>
 <body>
-   <h1>this is my first web pge</h1> 
+<script>
+// var req = new XMLHttpRequest();
+// req.open("GET", "https://restcountries.com/v3.1/all",'true');
+// req.send();
+// request.onload=function(){
+//   var countryData=JSON.parse(this.response);
+//   var countryData.forEach((e)=>{
+//     console.log(e.name,e.captial,e.flag);
+
+//   })
+// }
+//find total population using reduce function
+// var req = new XMLHttpRequest();
+//  req.open("GET", "https://restcountries.com/v3.1/all",'true');
+// req.send();
+//  request.onload=function(){
+//   var countryData=JSON.parse(this.response);
+// const population=countryData.reduce((previousvalue,currentvalue)=>{
+//   return previousvalue+currentvalue;
+// },0)
+// }
+
+//print the country which uses us dollar as currency
+var req = new XMLHttpRequest();
+ req.open("GET", "https://restcountries.com/v3.1/all",'true');
+req.send();
+ request.onload=function(){
+  var data=JSON.parse(this.response);
+  let currencies=[];
+    for(let i=0;i<data.currencies[0].code==="USD"){
+      console.log("name:",data[i].name,"==>,data[i].currencies[0].code";)
+    }
+ }
+ //a.get all the countries from the asia continent /region using the filter
+//  <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     //<link rel="stylesheet" href="./restcountries.js" type="text/Javascript">
+// </head>
+// <body>
+// <script>
+// // function handledata(){
+// // let data=JSON.parse(this.responseText)
+// // console.log(data);
+// // }
+// // for(let i=0;i<data.length;i++){
+// //   console.log(data[i].name.common,data[i].population)
+// // }
+// var req = new XMLHttpRequest();
+// req.addEventListener("load", handledata);
+// req.open("GET", "https://restcountries.com/v3.1/all");
+// req.send();
+// //a.get all the countries from the asia continent /region using the filter
+// request.onload=function(){
+//   var countryData=JSON.parse(this.response);
+//   const asia=countryData.filter((element)=>{
+//     if(element.region==='Asia'){
+//       return element.name;
+//     }
+//   })
+//   console.log(asia);
+// }
+// </script>
+// </body>
+// B.get all the countries with population of less than 2 lakhs using filter function
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     //<link rel="stylesheet" href="./restcountries.js" type="text/Javascript">
+// </head>
+// <body>
+// <script>
+// var req = new XMLHttpRequest();
+// req.open("GET", "https://restcountries.com/v3.1/all",'true');
+// req.send();
+// request.onload=function(){
+//   var countryData=JSON.parse(this.response);
+//   var population=countryData.filter((value)=>{
+//     return value.population<200000;
+//   })
+//   console.log(population);
+// }
+// </script>
+// </body>
+// </html>
+// C.print the following details name,flag,captial ,flag using for each function:
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     //<link rel="stylesheet" href="./restcountries.js" type="text/Javascript">
+// </head>
+// <body>
+// <script>
+// var req = new XMLHttpRequest();
+// req.open("GET", "https://restcountries.com/v3.1/all",'true');
+// req.send();
+// request.onload=function(){
+//   var countryData=JSON.parse(this.response);
+//   var countryData.forEach((e)=>{
+//     console.log(e.name,e.captial,e.flag);
+
+
+//   })
+// }
+// </script>
+// </body>
+// </html>
+
+
+</script>
 </body>
 </html>
