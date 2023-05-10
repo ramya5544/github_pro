@@ -1,0 +1,47 @@
+/* a:hover{
+    text-decoration: none;
+    background-color: blueviolet;
+    color: aquamarine;
+}
+.button:active{
+    background-color: aquamarine;
+}
+
+a:active{
+    text-decoration: underline;
+    color:red;
+}
+a:visited{
+    color:forestgreen;
+}
+a:link{
+    color: salmon;
+} */
+
+/* .button:hover{
+    background-color: forestgreen;
+    color: orchid;
+} */
+a:visited{
+    background-color: aquamarine;
+    color:blueviolet;
+    font-style: italic;
+}
+a:link{
+    color:tomato;
+    background-color: whitesmoke;
+}
+.button:active{
+text-decoration:yellow;
+color: black;
+}
+
+.span{
+    background-color: blueviolet;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 20px 20px 20px 20px;
+    border:10px ridge paleturquoise;
+    margin: 10px 10px 10px 10px;
+}
