@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstarpstyles.css"
+    <title>Banner1</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+       .text{
+        padding: 40px;
+        background:#eee;
+       } 
+       .text h3{
+        text-align:center;
+        text-transform: uppercase;
+        font-size:30px;
+        padding:10px;
+       }
+       .banner-container{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+       }
+       .banner-container .banner{
+        background: linear-gradient(-55deg,#ff7675 29%,#d63031 29.1%,#d63031 68%,#ff7675 68.1%);
+        border-radius:5px;
+        margin:10px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap:wrap;
+        box-shadow:0 5px 10px #0005;
+        overflow:hidden;
+       }
+       .banner-container .banner .shoe{
+        flex:1 1 250px;
+        padding:15px;
+        text-align:center;
+       }
+       .banner-container .banner .shoe img{
+        width:80%;
+ }
+      .banner-container .banner .content{
+        flex:1 1 250px;
+        text-align:center;
+        padding:10px;
+        text-transform:uppercase;
+      }
+      .banner-container .banner .content span{
+        color:#eee;
+        font-size:25px;
+      }
+      .banner-container .banner .content span{
+        color:#fff;
+        font-size:40px;
+      }
+      .banner-container .banner .content span{
+        color:#eee;
+        font-size:20px;
+        padding:10px 0;
+      }
+      .banner-container .banner .content .btn{
+        display:block;
+        height:40px;
+        width:150px;
+        line-height:40px;
+        background: #fff;
+        color:#d63031;
+        margin:5px auto;
+        text-decoration: none;
+      }
+      .banner-container .banner .women{
+        position:relative;
+        bottom:-33px;
+        padding:10px;
+        flex:1 1 250px;
+      }
+      .banner-container .banner .women img{
+        width:100%;
+
+      }
+      @media (max-width:768px){
+        .banner-container .banner .women{
+            display: none;
+        }
+      }
+    </style>
+</head>
+<body>
+<div class="text">
+    <h3>OFFER SALE </h3>
+    <p>Here’s a great example of a hurry-up limited offer, also known as a limited-period offer, from clothing store Express. Front and center on their site, in a big, red box is an offer for 40 percent off everything. And right above it, it says “Last Day!”
+
+        This is your absolute last chance to get a discount on everything (or almost everything), so you better act fast!The limited-supply offer is a classic technique used a lot by makeup and fragrance companies, particularly around the holidays. Estee Lauder is no exception.
+
+    </p>
+</div>
+<div class="banner-container">
+    <div class="banner">
+        <div class="shoe">
+            <img src="shoe.jpeg" alt="">
+        </div>
+        <div class="content">
+            <span>upto</span>
+            <h3>50%off</h3>
+            <p>offer ends after 5 days</p>
+            <a href="#" class="btn">view offer</a>
+        </div>
+        <div class="women">
+            <img src="women.jpeg" alt="">
+        </div>
+    </div>
+</div>
+<div class="text">
+    <p>Notice how Walmart draws attention to their “best offer ever” in this ad. Doesn’t it make you want to learn more by clicking on the red call-to-action button before you miss out on the chance to save an extra.
+
+        By defining what makes this offer different from others and what new experience customers will get from it, Walmart has created an enticing ad that will get people to act fast.The offer leaves me with this question: Is the deal good only through Christmas, or does it last through New Year’s Day? If I wanted to buy myself a Kindle, I’d be contemplating whether to take the deal or wait until after Christmas to see if someone gives me a Kindle as a gift.</p>
+</div>
+</body>
+</html>
