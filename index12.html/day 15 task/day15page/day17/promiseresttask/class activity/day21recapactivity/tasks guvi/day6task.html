@@ -1,0 +1,220 @@
+//a.get all the countries from the asia continent /region using the filter
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    //<link rel="stylesheet" href="./restcountries.js" type="text/Javascript">
+</head>
+<body>
+<script>
+// function handledata(){
+// let data=JSON.parse(this.responseText)
+// console.log(data);
+// }
+// for(let i=0;i<data.length;i++){
+//   console.log(data[i].name.common,data[i].population)
+// }
+var req = new XMLHttpRequest();
+req.addEventListener("load", handledata);
+req.open("GET", "https://restcountries.com/v3.1/all");
+req.send();
+//a.get all the countries from the asia continent /region using the filter
+request.onload=function(){
+  var countryData=JSON.parse(this.response);
+  const asia=countryData.filter((element)=>{
+    if(element.region==='Asia'){
+      return element.name;
+    }
+  })
+  console.log(asia);
+}
+</script>
+</body>
+B.get all the countries with population of less than 2 lakhs using filter function
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    //<link rel="stylesheet" href="./restcountries.js" type="text/Javascript">
+</head>
+<body>
+<script>
+var req = new XMLHttpRequest();
+req.open("GET", "https://restcountries.com/v3.1/all",'true');
+req.send();
+request.onload=function(){
+  var countryData=JSON.parse(this.response);
+  var population=countryData.filter((value)=>{
+    return value.population<200000;
+  })
+  console.log(population);
+}
+</script>
+</body>
+</html>
+C.print the following details name,flag,captial ,flag using for each function:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    //<link rel="stylesheet" href="./restcountries.js" type="text/Javascript">
+</head>
+<body>
+<script>
+var req = new XMLHttpRequest();
+req.open("GET", "https://restcountries.com/v3.1/all",'true');
+req.send();
+request.onload=function(){
+  var countryData=JSON.parse(this.response);
+  var countryData.forEach((e)=>{
+    console.log(e.name,e.captial,e.flag);
+
+
+  })
+}
+</script>
+</body>
+</html>
+D.print total population of countries using reduce function:
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    //<link rel="stylesheet" href="./restcountries.js" type="text/Javascript">
+</head>
+<body>
+<script>
+var req = new XMLHttpRequest();
+ req.open("GET", "https://restcountries.com/v3.1/all",'true');
+req.send();
+ request.onload=function(){
+  var countryData=JSON.parse(this.response);
+const population=countryData.reduce((previousvalue,currentvalue)=>{
+  return previousvalue+currentvalue;
+},0)
+}
+</script>
+</body>
+</html>
+
+Print the country that uses us dollar currency
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    //<link rel="stylesheet" href="./restcountries.js" type="text/Javascript">
+</head>
+<body>
+<script>
+var req = new XMLHttpRequest();
+ req.open("GET", "https://restcountries.com/v3.1/all",'true');
+req.send();
+ request.onload=function(){
+  var data=JSON.parse(this.response);
+  let currencies=[];
+    for(let i=0;i<data.currencies[0].code==="USD"){
+      console.log("name:",data[i].name,"==>,data[i].currencies[0].code";)
+    }
+ }
+
+
+</script>
+</body>
+</html>
+Day 6:OOPS concept
+
+Write a person class to hold the details:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class concepts</title>
+</head>
+<body>
+   <script>
+    class person{
+        constructor(){
+            this.name;
+            this.age;
+            this.email;
+            this.dob;
+            this.occupation;
+            this.educationDetails;
+            this.mobileNumber;
+            this.gender;
+        }
+        getDatas(){
+            return this.name,this.age,
+            this.email,
+            this.dob,
+            this.occupation,
+            this.educationDetails,
+            this.mobileNumber,
+            this.gender;
+        }
+    }
+        let obj1=new person();
+        let obj2=new person();
+        console.log(obj1.name,obj1.age,obj1.dob,obj1.occupation,obj1.educationDetails,obj1.mobileNumber,obj1.geneder.getDatas());
+        console.log(obj2.name,obj2.age,obj2.dob,obj2.occupation,obj2.educationDetails,obj2.mobileNumber,obj2.geneder.getDatas());
+
+
+
+
+   
+   </script>
+</body>
+</html>
+
+2.write a class to calculate uber price
+    class ubercalculation{
+        constructor(){
+            this.type;
+            this.model;
+            this.startingPoint;
+            this.endingPoint;
+            this.travelDuration;
+            this.trafficDelay;
+            this.dayTime;
+            this.nightTime;
+           
+        }
+        ubercalc(){
+            return totalcalculation;
+        }
+    }
+    let object=new uberCalculatiion();
+     let kmCostprice=20;
+        let cartype="wagnor";
+        let startingPoint="salem";
+        let endingPoint="attur";
+        let totalkms=54;
+        let totalcalculation=totalkms*knCostprice;
+        console.log(totalCalculation);
+
+
+   
+</script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,41 @@
+Difference between HTTP 1.1 VS HTTP 2:
+
+    Http 1.1:
+      Http 1.1 it used one tcp connection after that small improvement after six tcp connection be used.
+     Internet landscape was constantly changing with websites becoming more dynamic and heavy.
+     Repetition of header data and it can be more focus on gzip,minifying css/js,catching .
+     Client request and server request these are limited.and it is a stateless protocol.
+      Re using of the same tcp connection for multiple http request.
+
+ HTTP 2:
+      One secured tcp connections is setup in which Http request are transferred in form of streams.
+       Stream are connected to different request.Hpack data is added on http2.
+       Hpack data is separate from request data and can be zipped.it enables reuse of header data which is repeated in every request.
+       Hpack reduces http request size. And its fastest data delivery.
+       Push frames enables us to send mandatory resources along with an Http response.
+
+objects and its internal representation in Javascript:
+Objects:
+    It is used to store  Various keyed collections and more complex entities.
+It have primitive values and represented values.
+There are two ways to create a object
+  Object constructor and object literal.
+ Example: example for object literal 
+     Var bike={
+Name:”platina”,
+Color:”red”,
+Mileage:40,
+engine:”100cc”,
+};
+console.log(bike.color);
+Example for object constructor method:
+
+Var person=new object();
+person.firstName=”ramya”;
+person.age=27;
+person.degree=”BE”;
+console.log(person.firstName);
+console.log(person.degree);
+;
+ 
+

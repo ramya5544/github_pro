@@ -1,0 +1,274 @@
+<!-- How to compare two JSON have the same properties without order::
+
+a)let obj1={name:”person1”,age:5};
+b)let obj2={age:5,name:”person 1”}; -->
+   let obj1={name:"person1",age:5};
+let obj2={age:5,name:"person 1"};
+let flag=true;
+for(let e in obj1){
+if(obj1[e]===obj2[e])
+{
+flag=false;
+break;
+}
+}
+flag?console.log("equal"):console.log("not equal");
+
+2)Display all country flags in console:
+<html>
+
+
+
+
+   <head>
+
+
+
+
+       <title>GUVI ACTIVITY</title>
+
+
+
+
+   </head>
+
+
+
+
+   <body>
+
+
+
+
+       <h1>Hello</h1>
+
+
+
+
+       <h2>This is an example for XML HTTP Request</h2>
+
+
+
+
+       <script>
+
+
+
+
+           console.log("Welcome to HTML JS")
+
+
+
+
+
+
+
+
+
+
+           function handleData(){
+
+
+
+
+               Let data=(JSON.parse(this.responseText))
+               console.log(data);
+for(let i=0;i<data.length;i++)
+{
+console.log(data[i].name.flag);
+}
+
+
+
+
+           }
+
+
+
+
+
+
+
+
+
+
+           const req = new XMLHttpRequest();
+
+
+
+
+           // req.addEventListener('load',handleData)
+
+
+
+
+           req.onload = (res)=>{
+
+
+
+
+               console.log(JSON.parse(res.srcElement.responseText))
+
+
+
+
+           }
+
+
+
+
+           req.open("GET","https://restcountries.com/v3.1/all")
+
+
+
+
+           req.send()
+
+
+
+
+       </script>
+
+
+
+
+   </body>
+
+
+
+
+</html>
+
+3)use the rest of countries and print all countries names,regions and populations:
+
+
+
+
+
+
+
+
+
+
+
+<!Doctype HTML>
+<html>   
+<head>
+
+
+
+
+       <title>Guvi JS Day 3</title>
+
+
+
+
+   </head>
+
+
+
+
+   <body>
+
+
+
+
+       <h1>Hello</h1>
+
+
+
+
+       <h2>This is an example for XML HTTP Request</h2>
+
+
+
+
+       <script>
+
+
+
+
+           console.log("Welcome to HTML JS")
+
+
+
+
+
+
+
+
+
+
+           function handleData(){
+
+
+
+
+              Let data= (JSON.parse(this.responseText))
+          console.log(data);
+for(e of data)
+{
+console.log(e.data.name,e.data.regions,e.data.subregions,e.data.popultions);
+
+
+
+
+           }
+
+
+
+
+
+
+
+
+
+
+           const req = new XMLHttpRequest();
+
+
+
+
+           // req.addEventListener('load',handleData)
+
+
+
+
+           req.onload = (res)=>{
+
+
+
+
+               console.log(JSON.parse(res.srcElement.responseText))
+
+
+
+
+           }
+
+
+
+
+           req.open("GET","https://restcountries.com/v3.1/all")
+
+
+
+
+           req.send()
+
+
+
+
+       </script>
+
+
+
+
+   </body>
+
+
+
+
+</html>
+
+

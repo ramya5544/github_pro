@@ -1,0 +1,22 @@
+DIFFERENCE BETWEEN DOCUMENT AND WINDOW OBJECT:
+
+DOCUMENT OBJECT:
+  HTML,Aspx,php or other document that will be loaded into the browser.
+  The document actually gets loaded inside the window object and as properties available to like title,url and cookie and all the property related to DOM.
+
+Some methods are in document object:
+      window.Document.getElementById()
+      window.Document.body.firstChild()
+
+
+WINDOW OBJECT:
+     The window object represents a window in the browser.an object of window is created automatically by the  browser.
+     Its supports all type of browsers.
+     All global javascript objects,functions and variables automatically become members of window object.
+     Global variable are property and global  function are methods.
+
+Some methods are in window object:
+   alert(),confirm(),prompt(),open(),close(),setTimeout(),moveTo(),resize()
+Window is a browser control
+Document is a content tag conrols
+

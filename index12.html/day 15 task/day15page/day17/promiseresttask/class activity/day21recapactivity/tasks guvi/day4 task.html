@@ -1,0 +1,121 @@
+ARROW FUNCTION PROGRAMS
+1.print odd numbers in an array:
+      let number=[1,2,3,4,5,6,7,8,9];
+let odd=number.filter((num)=>num%2===1);
+console.log(odd.join(" "));
+
+2.convert all the strings to title caps in a string array:
+    let str="Guvi is best platform for full stack developer";
+   let titleCase = (str) => {
+                    str = str.toLowerCase().split(' ');
+                    for (let i = 0; i < str.length; i++) {
+                      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                    } 
+                    return str.join(' ');
+                  }     
+
+3.sum of all numbers in array:
+      let  array = (array)=>{
+             var sum = 0;
+                  for(let i = 0 ; i< array.length ; i++){
+                     sum = sum + array[i];
+                   }
+                   return sum;
+                   }
+    4.Return all prime numbers in an array:
+         let number=[1,2,3,4,5];
+  primeNumber = (numArray) => {
+                      numArray = numArray.filter((number) => {
+                        for (let i = 2; i <= Math.sqrt(number); i++) {
+                          if (number % i === 0) return false;
+                        }
+                        return true;
+                      });
+                      console.log(numArray);
+                  }
+5.Return all the palindromes in array:
+         let Palindrome = (arr, n) =>
+    {
+        for (let i = 0; i < n; i++)
+        {
+            let ans = isPalindrome(arr[i]);
+            if (ans == false)
+                return false;
+        }
+        return true;
+    }
+   
+
+2.IMMEDIATELY INVOKED FUNCTION EXPRESSION AND ANNOMYS FUNCTION
+
+1. Print odd numbers in an array:
+       (function(array){
+             for(var i = 0 ; i< array.length ; i++){
+                        if(array[i]%2!=0){
+                           console.log(array[i])
+                        } 
+                   }
+             })([1,2,3,4])
+    
+2.convert all strings to title caps in a string array:
+         (function (str) {
+                    str = str.toLowerCase().split(' ');
+                    for (let i = 0; i < str.length; i++) {
+                      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                    } 
+                    return str.join(' ');
+                  })("Guvi is best platform for full stack developer);
+3.sum of all numbers in tha array
+      (function(array){
+             var sum = 0;
+                  for(let  i = 0 ; i< array.length ; i++){
+                     sum = sum + array[i];
+                   }
+                   return sum;
+             })([1,2,3,4])
+4.Return all the prime numbers in array
+         (function(numArray){
+                      numArray = numArray.filter((number) => {
+                        for (let i = 2; i <= Math.sqrt(number); i++) {
+                          if (number % i === 0) return false;
+                        }
+                        return true;
+                      });
+                      console.log(numArray);
+                  })([1,2,3,4])
+5.return all the palindromes in an array
+         (function (arr, n)
+        {
+           
+            for (let i = 0; i < n; i++)
+            {
+                let ans = isPalindrome(arr[i]);
+                if (ans == false)
+                    return false;
+            }
+            return true;})[1,2,3],3)
+7.remove duplicates from an array
+
+     (function(array){
+                        let dup = [...new Set(array)];
+                        console.log(dup);
+                       })([1,1,2,3,4])
+8.Rotate an array by k times:
+       (function(array , k){
+                          k = k % a.length;
+                            if(k < 0){
+                              k += a.length;
+                            }
+                            reverse(a, 0, a.length - k - 1);
+                            reverse(a, a.length - k, a.length - 1);
+                            reverse(a, 0, a.length - 1);
+                          })([1,2,3,4] , 2)
+6.Return two median of sorted arrays in same size
+               (function(num1,num2){
+               Let compare=(i,j)=>{return i-j;}}
+Let arr=num1.concat(num2).sort(compare);
+if(arr.length%2==0){
+Return (arr[arr.length/2-1]+arr[arr.length/2])/2;
+}
+Return arr[Math.floor(arr.length/2)];
+   
