@@ -178,4 +178,3 @@ function closeModal() {
   backdrop.classList.remove("display");
   modal.remove();
 }
-
