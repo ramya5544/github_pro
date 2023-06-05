@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather API</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div>
+		<h1>Welcome to Weather API testing</h1>
+	</div>
+	<div>
+			<div>
+				<label><p>City :</p></label>
+				<input type="text" id="city" placeholder="Enter City name">
+				<p class='note' style="color: blueviolet">Note : First letter should be in uppercase</p>
+			</div>
+			<div>
+				<label><p>Country: </p></label>
+				<input type="text" id="country" placeholder="Enter Country name">
+				<p class='note' style="color: blueviolet">Note : First letter should be in uppercase</p>
+			</div>
+			<div>
+				<label><p>Weather :</p></label>
+				<h3 id="weather"></h3>
+			</div>
+			<div>
+				<br>
+				<button onclick="search()">Search</button>
+			</div>
+	</div>
+    <script src="./script.js"></script>
+</body>
+</html>

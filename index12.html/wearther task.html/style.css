@@ -1,0 +1,24 @@
+
+		h1{
+            background-color: blue;
+			border: 2px solid;
+			text-align: center;
+			background-color: blueviolet;
+			padding-top: 5%; 
+			padding-bottom: 5%; 
+		}
+		#city,#country{
+			width:15%;
+			border: 2px solid black;
+			padding: 10px;
+		}
+		div{
+			display: block;
+		}
+		div label{
+			display: block;
+		}
+		label,.note{
+			display: inline-block;
+		}
+	
